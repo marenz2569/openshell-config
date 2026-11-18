@@ -1,0 +1,29 @@
+{
+  "providers": {
+    "rechenknecht": {
+      "baseUrl": "http://172.22.99.215:8090/v1",
+      "api": "openai-completions",
+      "apiKey": "$OPENAI_API_KEY",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false
+      },
+      "models": [
+        {
+          "id": "Qwen3.8-27B-GSQ-RCO",
+          "name": "Qwen 3.8 27B",
+          "input": ["text"],
+          "contextWindow": 102400,
+	  "maxTokens": 8192
+        },
+        {
+          "id": "Dory1.0-4B-Q5_K_M",
+          "name": "Dory1.0-4B-Q5_K_M",
+          "input": ["text"],
+          "contextWindow": 262144,
+	  "maxTokens": 8192
+        }
+      ]
+    }
+  }
+}
